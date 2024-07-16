@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+.container-one {
+  display: flex;
+  justify-content: space-between;
+}
+
 .toggle {
   position: relative;
   display: inline-block;
@@ -23,7 +28,7 @@
 }
 
 .checkbox:checked + .toggle::after {
-  left: 36px;
+  left: 32px;
 }
 
 
