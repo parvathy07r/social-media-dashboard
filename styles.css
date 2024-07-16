@@ -7,6 +7,14 @@
   justify-content: space-between;
 }
 
+.container-two {
+  display: flex;
+} 
+
+.box {
+  border: 1px solid black;
+}
+
 .toggle {
   position: relative;
   display: inline-block;
