@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 56px;
+  height: 20px;
+  background-color: red;
+  border-radius: 30px;
+  border: 2px solid gray;
+}
+
+.toggle:after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: gray;
+  transition: all 0.5s;
+}
+
+.checkbox:checked + .toggle::after {
+  left: 36px;
+}
+
+
+.checkbox:checked + .toggle {
+  background-color: green;
+}
+
+.checkbox {
+  display: none;
+}
+
