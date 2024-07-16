@@ -10,6 +10,8 @@ body {
   height: 100vh;
   padding: 32px;
   font-family: "Inter", sans-serif;
+  background-color: hsl(230, 17%, 14%);
+  color: white;
 }
 
 .wrapper {
@@ -43,13 +45,51 @@ body {
 }
 
 .section {
-  border: 1px solid black;
+  border-radius: 4px;
+  background-color: hsl(228, 28%, 20%);
+  border-radius: 4px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  width: 154px;
+}
+
+.section-column {
+  display: flex;
+  flex-direction: column;
+  row-gap:16px;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  align-items: end;
+}
+
+.category {
+  font-size: 10px;
+}
+
+.box img {
+  width: 10px;
+}
+
+.count {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .box {
   display: flex;
   flex-direction: column;
   row-gap: 8px;
+  background-color: hsl(228, 28%, 20%);
+  border-radius: 4px;
+  padding: 16px;
+  height: 148px;
+  width: 148px;
+  justify-content: center;
+  align-items: center;
 }
 
 .box-one, .box-two {
@@ -99,4 +139,13 @@ body {
 
 .overview-row-two, .overview-row-three {
   column-gap: 16px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.followers-count {
+  font-size: 12px;
 }
