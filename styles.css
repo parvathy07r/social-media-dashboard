@@ -1,5 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 * {
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  padding: 32px;
+  font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
 }
 
 .container-one {
@@ -9,10 +25,43 @@
 
 .container-two {
   display: flex;
-} 
+  column-gap: 24px;
+}
+
+.container-three {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.overview-row-two {
+  display: flex;
+}
+
+.overview-row-three {
+  display: flex;
+}
+
+.section {
+  border: 1px solid black;
+}
 
 .box {
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.box-one, .box-two {
+  border-top: 2px solid blue;
+}
+
+.box-three {
+  border-top: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+.box-four {
+  border-top: 2px solid red;
 }
 
 .toggle {
@@ -35,12 +84,12 @@
   transition: all 0.5s;
 }
 
-.checkbox:checked + .toggle::after {
+.checkbox:checked+.toggle::after {
   left: 32px;
 }
 
 
-.checkbox:checked + .toggle {
+.checkbox:checked+.toggle {
   background-color: green;
 }
 
@@ -48,3 +97,6 @@
   display: none;
 }
 
+.overview-row-two, .overview-row-three {
+  column-gap: 16px;
+}
